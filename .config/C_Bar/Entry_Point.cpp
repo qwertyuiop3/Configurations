@@ -149,13 +149,13 @@ int32_t main()
 
   xcb_ewmh_init_atoms_replies(&X_Extended_Window_Manager_Hints_Connection, xcb_ewmh_init_atoms(X_Connection, &X_Extended_Window_Manager_Hints_Connection), nullptr);
 
-  xcb_atom_t X_Atom = X_Extended_Window_Manager_Hints_Connection._NET_WM_STATE_ABOVE;
-
-  xcb_ewmh_set_wm_state(&X_Extended_Window_Manager_Hints_Connection, X_Drawable, sizeof(X_Atom) / sizeof(xcb_atom_t), &X_Atom);
-
-  X_Atom = X_Extended_Window_Manager_Hints_Connection._NET_WM_WINDOW_TYPE_DOCK,
+  xcb_atom_t X_Atom = X_Extended_Window_Manager_Hints_Connection._NET_WM_WINDOW_TYPE_DOCK;
 
   xcb_ewmh_set_wm_window_type(&X_Extended_Window_Manager_Hints_Connection, X_Drawable, sizeof(X_Atom) / sizeof(xcb_atom_t), &X_Atom);
+
+  X_Atom = X_Extended_Window_Manager_Hints_Connection._NET_WM_STATE_ABOVE;
+
+  xcb_ewmh_set_wm_state(&X_Extended_Window_Manager_Hints_Connection, X_Drawable, sizeof(X_Atom) / sizeof(xcb_atom_t), &X_Atom);
 
   xcb_ewmh_wm_strut_partial_t X_Extended_Window_Manager_Hints_Window_Manager_Strut_Partial =
   {
