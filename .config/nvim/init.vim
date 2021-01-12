@@ -1,4 +1,4 @@
-"NERDtree
+"NERDTree
 
 set number
 
