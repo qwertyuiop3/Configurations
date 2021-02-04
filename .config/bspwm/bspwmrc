@@ -3,6 +3,8 @@
 if ! pgrep picom > /dev/null; then
 	feh --bg-fill ~/.config/bspwm/bg.jpg
 
+	jackd -dalsa -dhw:USB -r192000 -p1024 -n2 &
+
 	picom &
 
 	~/.config/C_Bar/C_Bar &
