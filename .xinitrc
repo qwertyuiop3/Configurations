@@ -8,4 +8,6 @@ betterdiscordctl install
 
 betterdiscordctl reinstall
 
+lxpolkit &
+
 exec dbus-launch bspwm

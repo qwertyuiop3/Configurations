@@ -5,6 +5,8 @@ if ! pgrep picom > /dev/null; then
 
 	picom &
 
+	pkill -x C_Bar
+
 	~/.config/C_Bar/C_Bar &
 
 	sxhkd &
