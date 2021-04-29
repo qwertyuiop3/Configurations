@@ -15,5 +15,10 @@ if [ "$UID" -ne 0 ]; then
 		cat ~/.cache/wal/sequences
 
 		neofetch
+
+		mpv()
+		{
+			command mpv $@ --sub-auto=all
+		}
 	fi
 fi
