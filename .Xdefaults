@@ -6,15 +6,15 @@ URxvt.iso14755_52: 0
 
 URxvt*scrollBar: 0
 
-URxvt.perl-ext-common: vtwheel
+URxvt.perl-ext-common: vtwheel,tabbed
 
 URxvt.keysym.C-M-c: builtin-string:
 
 URxvt.keysym.C-M-v: builtin-string:
 
-URxvt.keysym.S-C-V: eval:paste_clipboard
-
 URxvt.keysym.S-C-C: eval:selection_to_clipboard
+
+URxvt.keysym.S-C-V: eval:paste_clipboard
 
 Xft.hinting: 0
 
