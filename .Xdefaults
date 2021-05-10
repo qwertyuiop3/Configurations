@@ -1,0 +1,13 @@
+#include ".cache/wal/colors.Xresources"
+
+Xft.hinting: 0
+
+URxvt*scrollBar: 0
+
+URxvt*font:xft:Noto Sans Mono:regular:size=10
+
+URxvt*boldFont:xft:Noto Sans Mono:bold:size=10
+
+URxvt*italicFont:xft:Noto Sans Mono:regular:size=10
+
+URxvt*boldItalicFont:xft:Noto Sans Mono:bold:size=10

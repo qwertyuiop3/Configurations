@@ -9,7 +9,7 @@ SAVEHIST=1000
 unsetopt autocd beep extendedglob nomatch notify
 
 if [ "$UID" -ne 0 ]; then
-	if [ $TERM == "xterm-termite" ]; then
+	if [ $TERM == "rxvt-unicode-256color" ]; then
 		rm -rf ~/.cache/ranger
 
 		cat ~/.cache/wal/sequences
