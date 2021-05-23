@@ -14,7 +14,7 @@ super + r
 	bspc node @/ -R 90
 
 super + t
-	urxvt
+	urxvt -cd ~
 
 super + shift + t
 	bspc node -t tiled
