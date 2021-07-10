@@ -9,6 +9,8 @@ if ! pgrep picom > /dev/null; then
 
 	~/.config/C_Bar/C_Bar &
 
+	easyeffects --gapplication-service
+
 	qbittorrent &
 
 	sxhkd &
