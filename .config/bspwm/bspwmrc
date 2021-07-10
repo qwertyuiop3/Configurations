@@ -9,7 +9,7 @@ if ! pgrep picom > /dev/null; then
 
 	~/.config/C_Bar/C_Bar &
 
-	easyeffects --gapplication-service
+	easyeffects --gapplication-service &
 
 	qbittorrent &
 
