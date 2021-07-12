@@ -1,4 +1,4 @@
-source "/home/explorer/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
+. "/home/explorer/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
 
 HISTFILE=~/.histfile
 
@@ -8,7 +8,7 @@ SAVEHIST=1000
 
 unsetopt autocd beep extendedglob nomatch notify
 
-if [ "$UID" -ne 0 ]; then
+if [ $UID -ne 0 ]; then
 	if [ $TERM == "rxvt-unicode-256color" ]; then
 		rm -rf ~/.cache/ranger
 

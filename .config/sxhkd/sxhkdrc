@@ -1,6 +1,12 @@
 Print
 	flameshot gui
 
+XF86AudioStop
+	easyeffects -b 1
+
+XF86AudioPlay
+	easyeffects -b 2
+
 super + f
 	bspc node -t floating
 
